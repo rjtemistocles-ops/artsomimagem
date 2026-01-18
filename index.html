@@ -2,224 +2,129 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>ArtSom & Imagem – Assistência Técnica Autorizada</title>
+  <title>ArtSom & Imagem - Assistência Técnica</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ArtSom & Imagem – Assistência Técnica Autorizada SEMP e TCL em Bauru/SP. Conserto de TVs, som e eletrônicos em geral.">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #ffffff;
+      font-family: Arial, sans-serif;
+      background-color: #0b0f2b;
+      color: #ffffff;
       text-align: center;
-      color: #222;
     }
 
     header {
-      padding: 40px 20px 20px;
-      background: linear-gradient(135deg, #111, #333);
-      color: #ffffff;
+      background-color: #000000;
+      padding: 15px 10px;
     }
 
-    h1 {
-      font-size: 36px;
-      margin-bottom: 5px;
-      color: #ffffff;
+    header img {
+      max-width: 220px;
+      height: auto;
     }
 
-    h2 {
-      font-size: 20px;
-      font-weight: normal;
-      margin-bottom: 20px;
-      color: #dddddd;
+    section {
+      padding: 25px 15px;
+    }
+
+    h1, h2 {
+      color: #e60000;
+      margin-bottom: 10px;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 10px auto;
+      line-height: 1.6;
+      font-size: 16px;
     }
 
     .logos {
       display: flex;
       justify-content: center;
-      align-items: center;
-      gap: 25px;
+      gap: 40px;
+      margin-top: 20px;
       flex-wrap: wrap;
-      margin-top: 20px;
     }
 
-    .logos img {
-      max-height: 70px;
-      width: auto;
+    .logo-box {
       background: #ffffff;
-      padding: 6px 10px;
-      border-radius: 6px;
+      padding: 10px;
+      border-radius: 10px;
+      width: 140px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.5);
     }
 
-    section {
-      padding: 40px 20px;
+    .logo-box img {
+      width: 100%;
+      height: auto;
     }
 
-    .quem-somos {
-      background-color: #ffffff;
-    }
-
-    .quem-somos h2 {
-      font-size: 26px;
-      margin-bottom: 15px;
-      color: #111;
-    }
-
-    .quem-somos p {
-      font-size: 1.1em;
-      max-width: 750px;
-      margin: 0 auto 12px;
-      line-height: 1.6;
-      color: #333;
-    }
-
-    .servicos {
-      background-color: #f3f3f3;
-    }
-
-    .servicos h2 {
-      font-size: 26px;
-      margin-bottom: 20px;
-      color: #111;
-    }
-
-    .servicos ul {
-      list-style: none;
-      padding: 0;
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: left;
-    }
-
-    .servicos li {
-      font-size: 1.05em;
-      margin: 10px 0;
-      padding-left: 20px;
-      position: relative;
-      color: #222;
-    }
-
-    .servicos li::before {
-      content: "✔";
-      position: absolute;
-      left: 0;
-      color: #25d366;
+    .logo-text {
+      color: red;
       font-weight: bold;
-    }
-
-    .contato {
-      background-color: #ffffff;
-    }
-
-    .contato h2 {
-      font-size: 26px;
-      margin-bottom: 15px;
-      color: #111;
-    }
-
-    .contato p {
-      font-size: 1.05em;
-      margin: 8px 0;
-      color: #222;
-    }
-
-    .whatsapp-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 14px 26px;
-      background-color: #25d366;
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 1.1em;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
-    }
-
-    .whatsapp-btn:hover {
-      background-color: #1ebc59;
+      margin-top: 5px;
     }
 
     footer {
-      background-color: #111;
-      color: #ffffff;
-      padding: 15px 10px;
-      font-size: 0.9em;
+      background-color: #000000;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 14px;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 30px;
-      }
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
 
-      h2 {
-        font-size: 18px;
-      }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>ArtSom &amp; Imagem</h1>
-  <h2>Assistência Técnica Autorizada – <span style="color:red;">SEMP</span> • <span style="color:red;">TCL</span></h2>
-
-  <!-- Logo principal -->
-  <div class="logos">
-    <img src="imagem/logo.png" alt="Logo ArtSom & Imagem">
-  </div>
-
-  <!-- Logos SEMP e TCL -->
-  <div class="logos" style="margin-top: 15px;">
-  <div style="text-align:center;">
-    <img src="imagem/semp.png" alt="Assistência Técnica Autorizada SEMP" style="background:#fff; padding:6px; border-radius:6px;">
-    <div style="color:red; font-weight:bold;">SEMP</div>
-  </div>
-
-  <div style="text-align:center;">
-    <img src="imagem/tcl.png" alt="Assistência Técnica Autorizada TCL" style="background:#fff; padding:6px; border-radius:6px;">
-    <div style="color:red; font-weight:bold;">TCL</div>
-  </div>
-</div>
+  <img src="imagem/logo.png" alt="ArtSom & Imagem">
 </header>
 
-<section class="quem-somos" id="quem-somos">
-  <h2>Quem Somos</h2>
+<section>
+  <h1>Quem Somos</h1>
   <p>
-    A ArtSom &amp; Imagem é uma assistência técnica especializada em eletrônicos, com anos de experiência no mercado, oferecendo serviços de qualidade, confiança e transparência.
-  </p>
-  <p>
-    Somos assistência técnica autorizada das marcas <strong>Philco, Britânia, SEMP e TCL</strong>, trabalhando com equipamentos modernos, peças originais e técnicos capacitados para garantir o melhor atendimento aos nossos clientes.
-  </p>
-  <p>
-    Nosso compromisso é entregar soluções rápidas, seguras e com excelente custo-benefício, sempre prezando pela satisfação do cliente.
+    A ArtSom & Imagem é uma assistência técnica especializada em eletrônicos, áudio e imagem,
+    oferecendo soluções rápidas, confiáveis e com garantia de qualidade.
   </p>
 </section>
 
-<section class="servicos" id="servicos">
-  <h2>Serviços</h2>
-  <ul>
-    <li>Conserto de TVs</li>
-    <li>Som residencial</li>
-    <li>Equipamentos eletrônicos em geral</li>
-    <li>Assistência técnica autorizada SEMP e TCL</li>
-  </ul>
+<section>
+  <h2>Assistência Técnica Autorizada</h2>
+
+  <div class="logos">
+    <div class="logo-box">
+      <img src="imagem/semp.png" alt="Assistência Técnica Autorizada SEMP">
+      <div class="logo-text">SEMP</div>
+    </div>
+
+    <div class="logo-box">
+      <img src="imagem/tcl.png" alt="Assistência Técnica Autorizada TCL">
+      <div class="logo-text">TCL</div>
+    </div>
+  </div>
 </section>
 
-<section class="contato" id="contato">
+<section>
   <h2>Contato</h2>
-  <p><strong>Endereço:</strong> Rua Monsenhor Claro, 4-35 – Centro – Bauru/SP</p>
-  <p><strong>Telefone:</strong> (14) 99142-6414</p>
-  <p><strong>WhatsApp:</strong> (14) 99177-8120</p>
-
-  <a class="whatsapp-btn" href="https://wa.me/5514991778120" target="_blank">
-    Falar no WhatsApp
-  </a>
+  <p>📍 Rua Monsenhor Claro, 4-35 — Centro — Bauru/SP</p>
+  <p>📞 (14) 3204-3558</p>
+  <p>📱 WhatsApp: (14) 99796-6428</p>
 </section>
 
 <footer>
-  © 2026 ArtSom &amp; Imagem – Assistência Técnica Autorizada SEMP e TCL
+  © 2026 ArtSom & Imagem — Assistência Técnica Autorizada
 </footer>
 
 </body>
 </html>
-
