@@ -6,6 +6,7 @@
     <title>ArtSom & Imagem – Assistência Técnica</title>
 
     <style>
+        /* Reset básico */
         body, html {
             margin: 0;
             padding: 0;
@@ -14,30 +15,25 @@
             color: #333;
         }
 
-        /* Cabeçalho centralizado */
+        /* Cabeçalho */
         header {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            padding: 20px;
+            padding: 15px 20px;
             background-color: #fff;
             border-bottom: 1px solid #ddd;
         }
 
         /* Logo principal */
         .logo-principal {
-            height: 100px; /* Ajustável conforme a imagem */
+            height: 80px; /* ajustável */
         }
 
-        /* Logos secundários (embaixo do logo principal) */
-        .logos-secundarios {
-            display: flex;
-            gap: 20px;
-            margin-top: 15px;
-        }
-
+        /* Logos SEMP e TCL */
         .logos-secundarios img {
-            height: 50px; /* Menor que o principal */
+            height: 45px; /* tamanho menor */
+            margin-left: 12px;
         }
 
         /* Conteúdo principal */
@@ -66,14 +62,18 @@
 
         /* Responsivo */
         @media (max-width: 600px) {
-            .logo-principal {
-                height: 70px;
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .logos-secundarios {
+                margin-top: 10px;
             }
             .logos-secundarios img {
                 height: 35px;
             }
-            main {
-                padding: 15px;
+            .logo-principal {
+                height: 60px;
             }
         }
     </style>
@@ -83,10 +83,9 @@
 
     <!-- Cabeçalho -->
     <header>
-        <!-- Logo principal -->
-        <img src="logo.png" alt="ArtSom & Imagem" class="logo-principal">
-
-        <!-- Logos menores SEMP e TCL -->
+        <div>
+            <img src="logo.png" alt="ArtSom & Imagem" class="logo-principal">
+        </div>
         <div class="logos-secundarios">
             <img src="semp.png" alt="SEMP">
             <img src="TCL.png" alt="TCL">
