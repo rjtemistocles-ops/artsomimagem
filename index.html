@@ -6,11 +6,16 @@
     <title>ArtSom & Imagem – Assistência Técnica</title>
 
     <style>
+        /* Reset básico */
         body, html {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
         }
+
+        /* Cabeçalho */
         header {
             display: flex;
             justify-content: space-between;
@@ -19,16 +24,34 @@
             background-color: #fff;
             border-bottom: 1px solid #ddd;
         }
-        header img.logo-principal {
-            height: 70px; /* altura do logo principal */
+
+        /* Logo principal */
+        .logo-principal {
+            height: 80px; /* ajustável */
         }
+
+        /* Logos SEMP e TCL */
         .logos-secundarios img {
-            height: 45px; /* tamanho menor para SEMP e TCL */
+            height: 45px; /* tamanho menor */
             margin-left: 12px;
         }
+
+        /* Conteúdo principal */
         main {
             padding: 20px;
+            max-width: 1000px;
+            margin: auto;
         }
+
+        main h1, main h2 {
+            color: #111;
+        }
+
+        main ul {
+            padding-left: 20px;
+        }
+
+        /* Rodapé */
         footer {
             text-align: center;
             padding: 10px;
@@ -36,26 +59,40 @@
             background-color: #f9f9f9;
             border-top: 1px solid #ddd;
         }
+
+        /* Responsivo */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .logos-secundarios {
+                margin-top: 10px;
+            }
+            .logos-secundarios img {
+                height: 35px;
+            }
+            .logo-principal {
+                height: 60px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- Cabeçalho com logo principal + logos secundários -->
+    <!-- Cabeçalho -->
     <header>
         <div>
-            <!-- Logo principal -->
             <img src="logo.png" alt="ArtSom & Imagem" class="logo-principal">
         </div>
-
-        <!-- Logos menores (SEMP e TCL) -->
         <div class="logos-secundarios">
             <img src="semp.png" alt="SEMP">
             <img src="TCL.png" alt="TCL">
         </div>
     </header>
 
-    <!-- Conteúdo principal da página -->
+    <!-- Conteúdo principal -->
     <main>
         <h1>Assistência Técnica Autorizada – SEMP • TCL</h1>
 
@@ -81,8 +118,8 @@
 
         <h2>Contato</h2>
         <p>Endereço: Rua Monsenhor Claro, 4-35 – Centro – Bauru/SP</p>
-        <p>Telefone: (14) 99142-6414</p>
-        <p>WhatsApp: (14) 99177-8120</p>
+        <p>Telefone: (14) 3204-3558</p>
+        <p>WhatsApp: (14) 99796-6428</p>
     </main>
 
     <!-- Rodapé -->
