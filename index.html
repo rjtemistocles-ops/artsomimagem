@@ -11,23 +11,23 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #0b0b0b;
-      text-align: center;
+      background: #0f0f0f;
       color: #ffffff;
+      text-align: center;
     }
 
     header {
       padding: 50px 20px 30px;
-      background: linear-gradient(135deg, #000000, #1a1a1a);
+      background: linear-gradient(135deg, #000, #222);
     }
 
     h1 {
-      font-size: 40px;
-      margin-bottom: 8px;
+      font-size: 42px;
+      margin-bottom: 10px;
     }
 
     h2 {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: normal;
       margin-bottom: 25px;
       color: #cccccc;
@@ -37,40 +37,46 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 30px;
+      gap: 25px;
       flex-wrap: wrap;
       margin-top: 20px;
     }
 
     .logos img {
-      max-height: 90px;
-      width: auto;
       background: #ffffff;
       padding: 10px 14px;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    .logo-principal {
+      max-height: 140px;
+    }
+
+    .logo-marca {
+      max-height: 80px;
     }
 
     section {
-      padding: 60px 20px;
+      padding: 50px 20px;
     }
 
     .quem-somos {
-      background-color: #111111;
+      background-color: #ffffff;
+      color: #111;
     }
 
     .quem-somos h2 {
       font-size: 28px;
-      margin-bottom: 20px;
-      color: #ff2a2a;
+      margin-bottom: 15px;
+      color: #d10000;
     }
 
     .quem-somos p {
-      font-size: 1.15em;
+      font-size: 1.1em;
       max-width: 800px;
       margin: 0 auto 14px;
       line-height: 1.7;
-      color: #dddddd;
+      color: #333;
     }
 
     .servicos {
@@ -79,8 +85,8 @@
 
     .servicos h2 {
       font-size: 28px;
-      margin-bottom: 25px;
-      color: #ff2a2a;
+      margin-bottom: 20px;
+      color: #ff0000;
     }
 
     .servicos ul {
@@ -92,11 +98,10 @@
     }
 
     .servicos li {
-      font-size: 1.1em;
+      font-size: 1.05em;
       margin: 12px 0;
-      padding-left: 25px;
+      padding-left: 22px;
       position: relative;
-      color: #ffffff;
     }
 
     .servicos li::before {
@@ -108,32 +113,32 @@
     }
 
     .contato {
-      background-color: #111111;
+      background-color: #ffffff;
+      color: #111;
     }
 
     .contato h2 {
       font-size: 28px;
-      margin-bottom: 20px;
-      color: #ff2a2a;
+      margin-bottom: 15px;
+      color: #d10000;
     }
 
     .contato p {
-      font-size: 1.1em;
-      margin: 10px 0;
-      color: #dddddd;
+      font-size: 1.05em;
+      margin: 8px 0;
+      color: #222;
     }
 
     .whatsapp-btn {
       display: inline-block;
-      margin-top: 30px;
-      padding: 16px 30px;
+      margin-top: 25px;
+      padding: 16px 32px;
       background-color: #25d366;
       color: #ffffff;
       text-decoration: none;
       font-size: 1.15em;
       border-radius: 8px;
       transition: transform 0.2s ease, background-color 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     }
 
     .whatsapp-btn:hover {
@@ -142,10 +147,10 @@
     }
 
     footer {
-      background-color: #000000;
-      color: #cccccc;
+      background-color: #000;
+      color: #ffffff;
       padding: 18px 10px;
-      font-size: 0.95em;
+      font-size: 0.9em;
     }
 
     @media (max-width: 600px) {
@@ -153,11 +158,11 @@
         font-size: 32px;
       }
 
-      h2 {
-        font-size: 18px;
+      .logo-principal {
+        max-height: 110px;
       }
 
-      .logos img {
+      .logo-marca {
         max-height: 70px;
       }
     }
@@ -171,13 +176,13 @@
 
   <!-- Logo principal -->
   <div class="logos">
-    <img src="imagem/logo.png" alt="Logo ArtSom & Imagem">
+    <img src="imagem/logo.png" alt="Logo ArtSom & Imagem" class="logo-principal">
   </div>
 
   <!-- Logos SEMP e TCL -->
   <div class="logos" style="margin-top: 20px;">
-    <img src="imagem/semp.png" alt="Assistência Técnica Autorizada SEMP">
-    <img src="imagem/tcl.png" alt="Assistência Técnica Autorizada TCL">
+    <img src="imagem/semp.png" alt="Assistência Técnica Autorizada SEMP" class="logo-marca">
+    <img src="imagem/tcl.png" alt="Assistência Técnica Autorizada TCL" class="logo-marca">
   </div>
 </header>
 
@@ -190,7 +195,7 @@
     Somos assistência técnica autorizada das marcas <strong>Philco, Britânia, SEMP e TCL</strong>, trabalhando com equipamentos modernos, peças originais e técnicos capacitados.
   </p>
   <p>
-    Nosso compromisso é entregar soluções seguras, eficientes e com excelente custo-benefício.
+    Nosso compromisso é entregar soluções seguras, eficientes e com excelente custo-benefício, sempre focando na satisfação do cliente.
   </p>
 </section>
 
@@ -221,3 +226,4 @@
 
 </body>
 </html>
+Se
