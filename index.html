@@ -1,124 +1,230 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artsom & Imagem</title>
-    <style>
-        /* ===== Reset básico ===== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <title>ArtSom & Imagem – Assistência Técnica Autorizada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ArtSom & Imagem – Assistência Técnica Autorizada SEMP e TCL em Bauru/SP. Conserto de TVs, som e eletrônicos em geral.">
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0f0f0f;
+      color: #ffffff;
+      text-align: center;
+    }
 
-        /* ===== Cabeçalho ===== */
-        header {
-            text-align: center;
-            padding: 30px 20px;
-            background-color: #ffffff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
+    header {
+      padding: 50px 20px 30px;
+      background: linear-gradient(135deg, #000, #222);
+    }
 
-        header h1 {
-            font-size: 2em;
-            margin-bottom: 15px;
-            color: #1a1a1a;
-        }
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
 
-        .logo-principal {
-            max-width: 200px;
-            height: auto;
-            margin-bottom: 20px;
-        }
+    h2 {
+      font-size: 20px;
+      font-weight: normal;
+      margin-bottom: 25px;
+      color: #cccccc;
+    }
 
-        .logos-secundarias {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
+    .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
 
-        .logos-secundarias img {
-            max-width: 120px;
-            height: auto;
-            transition: transform 0.3s;
-        }
+    .logos img {
+      background: #ffffff;
+      padding: 10px 14px;
+      border-radius: 10px;
+    }
 
-        .logos-secundarias img:hover {
-            transform: scale(1.1);
-        }
+    .logo-principal {
+      max-height: 140px;
+    }
 
-        /* ===== Seções ===== */
-        section {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+    .logo-marca {
+      max-height: 80px;
+    }
 
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #1a1a1a;
-        }
+    section {
+      padding: 50px 20px;
+    }
 
-        p {
-            text-align: center;
-            font-size: 1.1em;
-            margin-bottom: 10px;
-        }
+    .quem-somos {
+      background-color: #ffffff;
+      color: #111;
+    }
 
-        /* ===== Rodapé ===== */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1a1a1a;
-            color: #fff;
-        }
+    .quem-somos h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #d10000;
+    }
 
-        /* ===== Responsividade ===== */
-        @media (max-width: 600px) {
-            .logo-principal {
-                max-width: 150px;
-            }
+    .quem-somos p {
+      font-size: 1.1em;
+      max-width: 800px;
+      margin: 0 auto 14px;
+      line-height: 1.7;
+      color: #333;
+    }
 
-            .logos-secundarias img {
-                max-width: 80px;
-                margin-bottom: 10px;
-            }
-        }
-    </style>
+    .servicos {
+      background-color: #1a1a1a;
+    }
+
+    .servicos h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #ff0000;
+    }
+
+    .servicos ul {
+      list-style: none;
+      padding: 0;
+      max-width: 650px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .servicos li {
+      font-size: 1.05em;
+      margin: 12px 0;
+      padding-left: 22px;
+      position: relative;
+    }
+
+    .servicos li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #25d366;
+      font-weight: bold;
+    }
+
+    .contato {
+      background-color: #ffffff;
+      color: #111;
+    }
+
+    .contato h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #d10000;
+    }
+
+    .contato p {
+      font-size: 1.05em;
+      margin: 8px 0;
+      color: #222;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 16px 32px;
+      background-color: #25d366;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.15em;
+      border-radius: 8px;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebc59;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #000;
+      color: #ffffff;
+      padding: 18px 10px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .logo-principal {
+        max-height: 110px;
+      }
+
+      .logo-marca {
+        max-height: 70px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- ===== Cabeçalho ===== -->
-    <header>
-        <h1>Artsom & Imagem</h1>
-        <img src="Imagem/logo.png" alt="Logo Artsom & Imagem" class="logo-principal">
-        <div class="logos-secundarias">
-            <img src="Imagem/semp.png" alt="Assistência Técnica SEMP">
-            <img src="Imagem/tcl.png" alt="Assistência Técnica TCL">
-        </div>
-    </header>
+<header>
+  <h1>ArtSom &amp; Imagem</h1>
+  <h2>Assistência Técnica Autorizada – <span style="color:red;">SEMP</span> • <span style="color:red;">TCL</span></h2>
 
-    <!-- ===== Seção de Serviços (Exemplo) ===== -->
-    <section>
-        <h2>Nossos Serviços</h2>
-        <p>Assistência técnica autorizada SEMP e TCL</p>
-        <p>Reparo, manutenção e suporte técnico especializado</p>
-    </section>
+  <!-- Logo principal -->
+  <div class="logos">
+    <img src="imagem/logo.png" alt="Logo ArtSom & Imagem" class="logo-principal">
+  </div>
 
-    <!-- ===== Rodapé ===== -->
-    <footer>
-        &copy; 2026 Artsom & Imagem – Todos os direitos reservados
-    </footer>
+  <!-- Logos SEMP e TCL -->
+  <div class="logos" style="margin-top: 20px;">
+    <img src="imagem/semp.png" alt="Assistência Técnica Autorizada SEMP" class="logo-marca">
+    <img src="imagem/tcl.png" alt="Assistência Técnica Autorizada TCL" class="logo-marca">
+  </div>
+</header>
+
+<section class="quem-somos" id="quem-somos">
+  <h2>Quem Somos</h2>
+  <p>
+    A ArtSom &amp; Imagem é uma assistência técnica especializada em eletrônicos, áudio e imagem, oferecendo soluções rápidas, confiáveis e com garantia de qualidade.
+  </p>
+  <p>
+    Somos assistência técnica autorizada das marcas <strong>Philco, Britânia, SEMP e TCL</strong>, trabalhando com equipamentos modernos, peças originais e técnicos capacitados.
+  </p>
+  <p>
+    Nosso compromisso é entregar soluções seguras, eficientes e com excelente custo-benefício, sempre focando na satisfação do cliente.
+  </p>
+</section>
+
+<section class="servicos" id="servicos">
+  <h2>Serviços</h2>
+  <ul>
+    <li>Conserto de TVs</li>
+    <li>Som residencial</li>
+    <li>Equipamentos eletrônicos em geral</li>
+    <li>Assistência técnica autorizada SEMP e TCL</li>
+  </ul>
+</section>
+
+<section class="contato" id="contato">
+  <h2>Contato</h2>
+  <p><strong>Endereço:</strong> Rua Monsenhor Claro, 4-35 – Centro – Bauru/SP</p>
+  <p><strong>Telefone:</strong> (14) 99142-6414</p>
+  <p><strong>WhatsApp:</strong> (14) 99177-8120</p>
+
+  <a class="whatsapp-btn" href="https://wa.me/5514991778120" target="_blank">
+    Falar no WhatsApp
+  </a>
+</section>
+
+<footer>
+  © 2026 ArtSom &amp; Imagem – Assistência Técnica Autorizada SEMP e TCL
+</footer>
 
 </body>
 </html>
+Se
+
