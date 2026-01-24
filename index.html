@@ -1,10 +1,21 @@
-<!DOCTYPE html>
+TYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <title>ArtSom & Imagem – Assistência Técnica Autorizada</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ArtSom & Imagem – Assistência Técnica Autorizada SEMP e TCL em Bauru/SP. Conserto de TVs, som e eletrônicos em geral.">
+  <meta name="description" content="ArtSom & Imagem – Assistência Técnica Autorizada SEMP e TCL em Bauru/SP. Conserto de TVs, som e eletrônicos em geral. Atendimento rápido, garantia e qualidade.">
+  <meta name="keywords" content="Assistência técnica, Bauru, SEMP, TCL, Philco, Britânia, Conserto de TV, Conserto de som, Eletrônicos, Garantia, Reparos">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ArtSom & Imagem – Assistência Técnica Autorizada">
+  <meta property="og:description" content="Conserto de TVs, som e eletrônicos em geral. Assistência autorizada SEMP, TCL, Philco e Britânia. Atendimento rápido e confiável em Bauru/SP.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.artsomimagem.com.br">
+  <meta property="og:image" content="https://www.artsomimagem.com.br/imagem/logo.png">
+
+  <!-- Google Custom Search Engine (substitua SEU_CX_AQUI pelo seu código) -->
+  <script async src="https://cse.google.com/cse.js?cx=SEU_CX_AQUI"></script>
 
   <style>
     body {
@@ -50,7 +61,7 @@
     }
 
     .logo-principal {
-      max-height: 400px; /* aumentado para desktop */
+      max-height: 400px;
       transition: transform 0.3s ease;
     }
 
@@ -157,6 +168,40 @@
       transform: scale(1.05);
     }
 
+    /* Caixa de busca Google estilizada */
+    .busca-google {
+      margin: 30px auto;
+      max-width: 450px;
+      text-align: center;
+    }
+
+    /* Estilizando input e botão da busca */
+    input.gsc-input {
+      padding: 10px 15px;
+      font-size: 1em;
+      border: 2px solid #25d366;
+      border-radius: 8px 0 0 8px;
+      outline: none;
+    }
+
+    input.gsc-input:focus {
+      border-color: #1ebc59;
+    }
+
+    input.gsc-search-button {
+      padding: 10px 15px;
+      background-color: #25d366;
+      color: #fff;
+      border: none;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    input.gsc-search-button:hover {
+      background-color: #1ebc59;
+    }
+
     footer {
       background-color: #000;
       color: #ffffff;
@@ -174,7 +219,7 @@
       }
 
       .logo-principal {
-        max-height: 160px; /* aumentado para mobile */
+        max-height: 160px;
       }
 
       .logo-marca {
@@ -183,6 +228,10 @@
 
       section {
         padding: 30px 15px;
+      }
+
+      .busca-google {
+        max-width: 300px;
       }
     }
   </style>
@@ -202,6 +251,11 @@
   <div class="logos" style="margin-top: 20px;">
     <img src="imagem/semp.png" alt="Assistência Técnica Autorizada SEMP" class="logo-marca">
     <img src="imagem/tcl.png" alt="Assistência Técnica Autorizada TCL" class="logo-marca">
+  </div>
+
+  <!-- Caixa de busca Google estilizada -->
+  <div class="busca-google">
+    <gcse:search></gcse:search>
   </div>
 </header>
 
@@ -246,4 +300,3 @@
 
 </body>
 </html>
-
